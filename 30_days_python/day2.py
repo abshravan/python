@@ -1,4 +1,3 @@
-"""
 # exersize 3
 age=int(22)
 height=float(180.4)
@@ -72,7 +71,14 @@ hours=input("enter the number of hours" )
 pay=input('enter the pay per hours')
 weekly_earning=int(hours)*int(pay)
 print(weekly_earning)
-"""
+
 number_of_years=int(input("enter the number of years"))
 seconds=number_of_years*365*24*60*60
 print("you live for :",seconds)
+
+print("1 1 1 1 1")
+print("2 1 2 4 8")
+print("3 1 3 9 27")
+print("4 1 4 16 64")
+print("5 1 5 25 125")
+
