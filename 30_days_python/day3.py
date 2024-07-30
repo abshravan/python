@@ -84,6 +84,5 @@ print("Name\tAge\tCountry\tCity\nShravan\t22\tIndia\tKollam")
 #Use the string formatting method to display the follwing lines.
 radius = 10
 area = 3.14 * radius ** 2
-print('area of the circle wit h radius {} is {} meters sq',format(radius,area))
-print(area)
+print('Area of the circle with radius {} is {} meters sq'.format(radius, area))
 #make the following using string formatting methods
