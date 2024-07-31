@@ -66,3 +66,25 @@ print(full_stack)
 full_stack.insert(5,"Python")
 full_stack.insert(6,"SQL")
 print(full_stack)
+#level2
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+#Sort the list and find the min and max age
+ages.sort()
+print(ages[0],ages[len(ages)-1])
+#Add the min age and the max age again to the list
+ages.append(ages[0])
+ages.append(ages[len(ages)-1])
+print(ages)
+#Find the median age (one middle item or two middle items divided by two)
+median_age=ages[n//2]
+print(median_age)
+#Find the average age (sum of all items divided by their number )
+average_age=sum(ages)/n
+print(average_age)
+#Find the range of the ages (max minus min)
+range_age=ages[len(ages)-1]-ages[0]
+#Compare the value of (min - average) and (max - average), use abs() method
+#abs is absolute value
+n1=abs(ages[0]-average_age)
+n2=abs(ages[len(ages)-1]-average_age)
+print(n1,n2)
