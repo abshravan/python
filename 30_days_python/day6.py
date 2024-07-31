@@ -15,3 +15,22 @@ print(it_companies)
 #What is the difference between remove and discard
 it_companies.discard("gst")
 print(it_companies)
+#Exercises: Level 2
+#Join A and B
+print(A.union(B))
+#Find A intersection B
+print(A.intersection(B))
+#Is A subset of B
+print(A.issubset(B))
+#Are A and B disjoint sets
+print(A.isdisjoint(B))
+#Join A with B and B with A
+# Suggested code may be subject to a license. Learn more: ~LicenseLog:3674521289.
+# Suggested code may be subject to a license. Learn more: ~LicenseLog:1293947566.
+print(A.union(B))
+print(B.union(A))
+#What is the symmetric difference between A and B
+print(A.symmetric_difference(B))
+#Delete the sets completely
+del A
+del B
