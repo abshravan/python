@@ -12,6 +12,7 @@
     # pkgs.nodePackages.nodemon
     pkgs.python3
     pkgs.neofetch
+    pkgs.ranger
   ];
   # Sets environment variables in the workspace
   env = {};
