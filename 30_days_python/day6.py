@@ -34,3 +34,15 @@ print(A.symmetric_difference(B))
 #Delete the sets completely
 del A
 del B
+
+#Exercises: Level 3
+#Convert the ages to a set and compare the length of the list and the set, which one is bigger?
+age1=set(age)
+print(len(age),len(age1))
+#Explain the difference between the following data types: string, list, tuple and set
+#I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+str1="I am a teacher and I love to inspire and teach people"
+str2=str1.split(" ")
+str2=set(str2)
+print(str2)
+print(len(str2))
