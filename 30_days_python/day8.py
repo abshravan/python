@@ -7,8 +7,11 @@ Output:
 Enter your age: 15
 You need 3 more years to learn to drive.
 """
-
-
+age=input("Enter your age:")
+  if age<=17
+    n1=18-n
+    print("you need"+n1+"years to drive")
+  else print("You are old enough to drive")
 """
 Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
 Enter your age: 30
