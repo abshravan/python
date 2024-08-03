@@ -94,3 +94,64 @@ if flag ==True:
 else:
     fruits.append(new_fruit)
 print(fruits)
+"""
+Here we have a person dictionary. Feel free to modify it!
+
+        person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+    }
+ * Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
+ * Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
+ * If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
+ * If the person is married and if he lives in Finland, print the information in the following format:
+ """
+person = {
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+}
+
+# Check if the person dictionary has skills key
+if 'skills' in person:
+    # Print out the middle skill in the skills list
+    skills = person['skills']
+    middle_skill = skills[len(skills) // 2]
+    print("Middle skill:", middle_skill)
+    
+    # Check if the person has 'Python' skill and print out the result
+    has_python = 'Python' in skills
+    print("Has Python skill:", has_python)
+    
+    # Check the person's skills and print the corresponding title
+    if set(skills) == {'JavaScript', 'React'}:
+        print('He is a front end developer')
+    elif set(skills) == {'Node', 'Python', 'MongoDB'}:
+        print('He is a backend developer')
+    elif set(skills) == {'React', 'Node', 'MongoDB'}:
+        print('He is a fullstack developer')
+    else:
+        print('Unknown title')
+
+# Check if the person is married and lives in Finland
+if person.get('is_marred') and person.get('country') == 'Finland':
+    print(f"""
+    {person['first_name']} {person['last_name']} is married and lives in {person['country']}.
+    Age: {person['age']}
+    Address: {person['address']['street']}, {person['address']['zipcode']}
+    """)
