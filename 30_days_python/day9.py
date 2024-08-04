@@ -62,8 +62,17 @@ for i in range(0,11):
 
 
 #Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
+list=['Python', 'Numpy','Pandas','Django', 'Flask']
+for i in range(0,len(list)):
+    print(list[i])
 
 
 #Use for loop to iterate from 0 to 100 and print only even numbers
+for i in range(0,101):
+    if i%2==0:
+        print(i)
 
 #Use for loop to iterate from 0 to 100 and print only odd numbers
+for i in range(0,101):
+    if i%2==1:
+        print(i)
